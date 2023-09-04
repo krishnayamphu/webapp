@@ -9,13 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edd0bc8a-18ec-4e10-bbd2-9bf66a324889" name="Changes" comment="jsp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/TestApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/MyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/PageServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/page1.jsp" afterDir="false" />
+    <list default="true" id="edd0bc8a-18ec-4e10-bbd2-9bf66a324889" name="Changes" comment="servlet">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/FormServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/TestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/WelcomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/myform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +67,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\DevSpace\Java\webapp\src\main\webapp\jsp" />
       <recent name="C:\DevSpace\Java\webapp\src\main\webapp\html" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ky.servlets" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8">
@@ -191,7 +195,8 @@
       <workItem from="1693387909304" duration="1958000" />
       <workItem from="1693474860464" duration="1610000" />
       <workItem from="1693560863960" duration="2508000" />
-      <workItem from="1693733256022" duration="1831000" />
+      <workItem from="1693733256022" duration="1960000" />
+      <workItem from="1693819769666" duration="1798000" />
     </task>
     <task id="LOCAL-00001" summary="jsp">
       <created>1693563213629</created>
@@ -200,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693563213629</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="servlet">
+      <created>1693735507827</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693735507827</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +231,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="jsp" />
+    <MESSAGE value="servlet" />
+    <option name="LAST_COMMIT_MESSAGE" value="servlet" />
   </component>
 </project>
