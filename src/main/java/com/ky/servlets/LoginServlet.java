@@ -1,5 +1,4 @@
 package com.ky.servlets;
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -17,6 +16,8 @@ public class LoginServlet extends HttpServlet {
             String username=request.getParameter("username");
             String password=request.getParameter("password");
             if(username.equals("admin")&&password.equals("a123")){
+                HttpSession session= request.getSession();
+                session.setAttribute("user",username);
                 response.sendRedirect("welcome");
             }else{
                 String msg="Invalid username or password";
