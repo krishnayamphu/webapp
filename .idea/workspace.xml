@@ -9,14 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edd0bc8a-18ec-4e10-bbd2-9bf66a324889" name="Changes" comment="servlet form">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/session/SessionDelServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/session/SessionGetServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/session/SessionSetServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/dashboard.jsp" afterDir="false" />
+    <list default="true" id="edd0bc8a-18ec-4e10-bbd2-9bf66a324889" name="Changes" comment="session">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/config/ConnectDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/controllers/user/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/cookies/CookeiGetServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/cookies/CookeiSetServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/cookies/CookieDelServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/cookies/CookieServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/TestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/create.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ky/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ky/servlets/WelcomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ky/servlets/WelcomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ky/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ky/TestApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +60,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/DevSpace/Java/webapp/src/main/webapp/page",
-    "list.type.of.created.stylesheet": "CSS"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/DevSpace/Java/webapp/src/main/webapp/page&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\DevSpace\Java\webapp\src\main\webapp\page" />
@@ -70,6 +77,7 @@
       <recent name="C:\DevSpace\Java\webapp\src\main\webapp\html" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ky.cookies" />
       <recent name="com.ky.session" />
       <recent name="com.ky.servlets" />
     </key>
@@ -199,7 +207,9 @@
       <workItem from="1693560863960" duration="2508000" />
       <workItem from="1693733256022" duration="1960000" />
       <workItem from="1693819769666" duration="2039000" />
-      <workItem from="1693906005495" duration="1849000" />
+      <workItem from="1693906005495" duration="1952000" />
+      <workItem from="1694078985470" duration="2696000" />
+      <workItem from="1694424358655" duration="2472000" />
     </task>
     <task id="LOCAL-00001" summary="jsp">
       <created>1693563213629</created>
@@ -222,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693821812691</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="session">
+      <created>1693907966194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693907966194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +260,7 @@
     <MESSAGE value="jsp" />
     <MESSAGE value="servlet" />
     <MESSAGE value="servlet form" />
-    <option name="LAST_COMMIT_MESSAGE" value="servlet form" />
+    <MESSAGE value="session" />
+    <option name="LAST_COMMIT_MESSAGE" value="session" />
   </component>
 </project>
