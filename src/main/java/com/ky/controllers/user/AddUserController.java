@@ -8,8 +8,8 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "RegisterController", value = "/register")
-public class RegisterController extends HttpServlet {
+@WebServlet(name = "AddUserController", value = "/add-user")
+public class AddUserController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("user/create.jsp").forward(request,response);
