@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edd0bc8a-18ec-4e10-bbd2-9bf66a324889" name="Changes" comment="user crud">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/controllers/user/AddUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/head.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/nav.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/style.css" afterDir="false" />
+    <list default="true" id="edd0bc8a-18ec-4e10-bbd2-9bf66a324889" name="Changes" comment="css styling">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/controllers/user/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/controllers/user/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ky/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ky/controllers/user/RegisterController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/create.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ky/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ky/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/nav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/nav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,10 @@
       <workItem from="1694078985470" duration="2696000" />
       <workItem from="1694424358655" duration="2608000" />
       <workItem from="1694510917928" duration="2961000" />
-      <workItem from="1694597747045" duration="1762000" />
+      <workItem from="1694597747045" duration="1910000" />
+      <workItem from="1694668793904" duration="760000" />
+      <workItem from="1694678808955" duration="696000" />
+      <workItem from="1694684389849" duration="2179000" />
     </task>
     <task id="LOCAL-00001" summary="jsp">
       <created>1693563213629</created>
@@ -252,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694513893983</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="css styling">
+      <created>1694599664685</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694599664685</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +285,7 @@
     <MESSAGE value="session" />
     <MESSAGE value="jdbc" />
     <MESSAGE value="user crud" />
-    <option name="LAST_COMMIT_MESSAGE" value="user crud" />
+    <MESSAGE value="css styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="css styling" />
   </component>
 </project>

@@ -78,4 +78,22 @@ public class UserDAO {
             System.err.println(e);
         }
     }
+
+    public static boolean authUser(User user){
+        boolean status=false;
+        try {
+            Connection con= ConnectDB.connect();
+            String sql="SELECT * FROM users WHERE username=? AND password=?";
+            PreparedStatement ps=con.prepareStatement(sql);
+            ps.setString(1,user.getUsername());
+            ps.setString(2,user.getPassword());
+            ResultSet rs=ps.executeQuery();
+            while(rs.next()){
+                status=true;
+            }
+        } catch (SQLException e) {
+            System.err.println(e);
+        }
+        return status;
+    }
 }
