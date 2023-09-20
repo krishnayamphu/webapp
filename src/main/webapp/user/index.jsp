@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.ky.model.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -32,6 +33,31 @@
                 out.print("</tr>");
             }
         %>
+    </table>
+
+    <hr>
+    <h3>All Users</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        <c:forEach var="user" items="${users}">
+            <tr>
+                <td>${user.id}</td>
+                <td>${user.username}</td>
+                <td>${user.password}</td>
+                <td class="action">
+                    <a href='user-edit?id=${user.id}'>Edit</a>
+                    <form method='post' action='users'>
+                        <input type="hidden" name="id" value="${user.id}">
+                        <button>Delete</button>
+                    </form>
+                </td>
+            </tr>
+        </c:forEach>
     </table>
 </div>
 </body>

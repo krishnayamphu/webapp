@@ -8,10 +8,7 @@ import java.util.ArrayList;
 
 public class TestApp {
     public static void main(String[] args) {
-        String path="C:\\xampp\\tomcat\\webapps\\webapp\\uploads";
-        ArrayList<String> files= MediaFile.getFiles(path);
-        for(String item: files){
-            System.out.println(item);
-        }
+        String path="C:\\xampp\\tomcat\\webapps\\webapp\\uploads\\p1.jpg";
+        System.out.println(MediaFile.delete(path));
     }
 }
