@@ -4,11 +4,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%@include file="head.jsp" %>
+    <%@include file="../head.jsp" %>
     <title>All Users</title>
 </head>
 <body>
-<%@include file="nav.jsp" %>
+<%@include file="../nav.jsp" %>
 <div class="container">
     <h3>All Users</h3>
     <table>
@@ -33,31 +33,6 @@
                 out.print("</tr>");
             }
         %>
-    </table>
-
-    <hr>
-    <h3>All Users</h3>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Action</th>
-        </tr>
-        <c:forEach var="user" items="${users}">
-            <tr>
-                <td>${user.id}</td>
-                <td>${user.username}</td>
-                <td>${user.password}</td>
-                <td class="action">
-                    <a href='user-edit?id=${user.id}'>Edit</a>
-                    <form method='post' action='users'>
-                        <input type="hidden" name="id" value="${user.id}">
-                        <button>Delete</button>
-                    </form>
-                </td>
-            </tr>
-        </c:forEach>
     </table>
 </div>
 </body>

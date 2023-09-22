@@ -1,14 +1,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="com.ky.model.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <%@include file="head.jsp" %>
+    <%@include file="../head.jsp" %>
     <title>All Items</title>
 </head>
 <body>
-<%@include file="nav.jsp" %>
+<%@include file="../nav.jsp" %>
 <div class="container">
     <h3>All Todo Items</h3>
     <table>
@@ -22,11 +20,11 @@
             <tr>
                 <td>${todo.id}</td>
                 <td>${todo.items}</td>
-                <td>${todo.status}</td>
+                <td><input type="checkbox" ${todo.status==true?'checked':''}></td>
                 <td class="action">
                     <form method='post' action='todo-update'>
                         <input type="hidden" name="id" value="${todo.id}">
-                        <button>Done</button>
+                        <button ${todo.status==true?'disabled':''}>Done</button>
                     </form>
                     <form method='post' action='todo'>
                         <input type="hidden" name="id" value="${todo.id}">
